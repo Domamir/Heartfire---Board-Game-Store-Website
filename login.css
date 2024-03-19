@@ -1,0 +1,509 @@
+/*Ogólne ustawienia kontenerów*/
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: rgb(235, 237, 239);
+    margin: 0;
+    background-image: url(/pictures/loginBackground.jpg);
+}
+
+
+[class*="bar-top"]{
+    background-color: rgba(133, 15, 15, 0.962)
+}
+
+[class*="bar-top"]{
+    display:flex;
+    flex-direction: row;
+}
+
+[class*="ol-kat-"]{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center; 
+    border-right: 2px solid rgb(111, 109, 109);
+}
+
+
+
+
+/*Ikonki*/
+
+.col-top-1, .col-top-3, .col-top-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.col-top-1 > img{
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    min-height: 40px;
+    min-width: 30px;
+}
+
+.col-top-3 > img, .col-top-4 > img {
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    min-height: 40px;
+    min-width: 30px;
+}
+
+.col-top-3:hover, .col-top-4:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+    filter: brightness(0) invert(1) grayscale(100%);
+}
+
+.glass{
+    min-height: 6px;
+    max-height: 30px;
+}
+
+/*wyszukiwarka*/
+
+.wyszukiwarka_col-top-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin:0;
+}
+
+.searchBar{
+    background-color: white;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 15px;
+    margin-left: 15%;
+}
+
+.searchIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+    padding: 0;
+    margin:0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.searchText{
+
+    height: 100%;
+    width: 90%;
+    padding: 0;
+    margin:0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.search{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: large;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/*Pasek kategorii*/
+
+[class*="kategorie col-2"]{
+    background-color: rgb(85, 77, 77);
+    color:rgb(236, 226, 226);
+    font-size: calc(4px + 0.9vw);
+}
+
+
+
+/*Ustawienia sticky menu*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  header{
+   z-index: 2000;
+    margin-bottom: 5px;
+}
+
+
+a{
+    text-decoration: none;
+}
+/*Responsywnosc*/
+
+
+.col-1,.col-2, .col-3{
+    width: 100%;
+    margin: 0;
+}
+
+/*pasek nawigacyjny*/
+.col-1{
+    height: 10vh;
+    min-height: 75px;
+}
+
+.col-3{
+    height: 10vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/*top bar*/
+.col-top-1{
+    width: 20%;
+}
+
+.col-top-2{
+    width: 40%;
+}
+
+.col-top-3{
+    width: 20%;
+}
+
+.col-top-4{
+    width: 20%;
+}
+
+[class*="col-t"] {
+    padding: 15px;
+    height: 100%;
+}
+
+
+/*main*/
+
+
+
+/* For mobile phones: */
+ 
+    /*header*/
+
+    /*Top bar*/
+
+    .searchBar{
+        display:none;
+    }
+
+    /*Kategorie*/
+    [class*="kategorie col-2"] {
+        display: none;
+    }
+
+    /*kategorie*/
+    .col-2{
+        height: 10vh;
+        min-height: 60px;
+    }
+
+    .col-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 1000px;
+        font-size:calc(10px + 1.3vw)
+    }
+
+    .col-3{
+        height: 20vh;
+        min-height: 1000px;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .contactForm, .loginForm{
+        height: 40%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: rgb(193, 193, 194);
+        border-radius: 10px;
+    }
+    
+    .contactForm > div, .loginForm > div{
+        gap: 10px;
+    }
+
+    .contactForm > div{
+        width: 100%;
+        height: 20%;
+    }
+
+    #contactSubmit, #loginSubmit{
+        width: 80%;
+        height: 20%;
+        font-size: calc(14px + 1.0vw);
+        border-radius: 20px;
+    }
+
+    #contactSubmit:hover, #loginSubmit:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    .loginForm > div{
+        width: 100%;
+        height: 25%;
+    }
+
+    .contactTitle, .loginTitle{
+        text-align: center;
+    }
+    .loginForm input, .contactForm input{
+        height: 40%;
+        width: 100%;
+        font-size: large;
+    }
+
+    .contactTitle, .loginTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    }
+
+   
+
+
+/* For tablets: */
+
+@media only screen and (min-width: 600px) {
+    
+    /*header*/
+
+    /*Top bar*/
+    .searchBar{
+        display:flex;
+    }
+
+    /*Kategorie*/
+
+    /*top bar*/
+    .col-top-1{
+        width: 20%;
+    }
+
+    .col-top-2{
+        width: 60%;
+    }
+
+    .col-top-3{
+        width: 10%;
+    }
+
+    .col-top-4{
+        width: 10%;
+    }
+
+
+    /*main*/
+
+    .col-3{
+        height: 20vh;
+        min-height: 500px;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .contactForm, .loginForm{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: rgb(193, 193, 194);
+        border-radius: 10px;
+    }
+    
+    .contactForm > div, .loginForm > div{
+        gap: 10px;
+    }
+
+    .contactForm > div{
+        width: 100%;
+        height: 20%;
+    }
+
+    #contactSubmit, #loginSubmit{
+        width: 80%;
+        height: 20%;
+        font-size: calc(14px + 1.0vw);
+        border-radius: 20px;
+    }
+
+    #contactSubmit:hover, #loginSubmit:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    .loginForm > div{
+        width: 100%;
+        height: 25%;
+    }
+
+    .contactTitle, .loginTitle{
+        text-align: center;
+    }
+    .loginForm input, .contactForm input{
+        height: 40%;
+        width: 100%;
+        font-size: large;
+    }
+
+    .contactTitle, .loginTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    }
+
+}
+
+/*For Desktop:*/
+
+@media only screen and (min-width: 768px) {
+    
+    /*header*/
+
+    /*Top bar*/
+    .searchBar{
+        display:flex;
+    }
+
+    .col-top-1{
+        width: 10%;
+    }
+
+    .col-top-2{
+        width: 60%;
+    }
+
+    .col-top-3{
+        width: 10%;
+    }
+
+    .col-top-4{
+        width: 10%;
+    }
+
+    .col-top-5{
+        width: 10%;
+    }
+
+    /*Kategorie*/
+
+    [class*="kategorie col-2"]{
+        display:flex;
+        flex-direction: row;
+    }
+
+    [class*="col-k"] {
+        display: grid;
+        padding: 15px;
+        height: 100%;
+        width: 10%;
+    }
+
+    
+    [class*="col-k"] a > div {
+        color: white;
+    }
+
+    
+    /*Main*/
+
+    .col-3{
+        height: 20vh;
+        min-height: 500px;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .contactForm, .loginForm{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: rgb(193, 193, 194);
+        border-radius: 10px;
+    }
+    
+    .contactForm > div, .loginForm > div{
+        gap: 10px;
+    }
+
+    .contactForm > div{
+        width: 100%;
+        height: 20%;
+    }
+
+    #contactSubmit, #loginSubmit{
+        width: 80%;
+        height: 20%;
+        font-size: calc(14px + 1.0vw);
+        border-radius: 20px;
+    }
+
+    #contactSubmit:hover, #loginSubmit:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    .loginForm > div{
+        width: 100%;
+        height: 25%;
+    }
+
+    .contactTitle, .loginTitle{
+        text-align: center;
+    }
+    .loginForm input, .contactForm input{
+        height: 40%;
+        width: 100%;
+        font-size: large;
+    }
+
+    .contactTitle, .loginTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    }
+}
+
+

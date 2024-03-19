@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="noweProdukty.css">
+    <title>Planszówkarnia Heartfire</title>
+    <link rel="icon" type="image/x-icon" href="/pictures/icons8-campfire-96.png">
+</head>
+<body>
+        <header id="navbar">
+            <div class="bar-top col-1">
+                <div class="logo col-top-1">
+                    <img class="icon-t wood" src="/pictures/icons8-campfire-96.png" alt="Ikona ogniska">
+                </div>
+                <div class="breaker col-top-5"></div>
+                <div class="wyszukiwarka col-top-2">
+                    <div class="searchBar">
+                        <div class="searchIcon">
+                            <img class="icon-t glass" src="/pictures/magnifying-glass-solid.svg" alt="Ikona lupy">
+                        </div>
+                        <div class="searchText">
+                            <input type="text" placeholder="Szukaj..." class="search">
+                        </div>
+                    </div>
+                </div>
+                <div class="konto col-top-3">
+                    <a href="login.html">
+                    <img class="icon-t iconUser" src="/pictures/user-solid.svg" alt="Ikona użytkownika" >
+                    </a>
+                </div>
+                <div class="koszyk col-top-4"> 
+                    <img class="icon-t iconCart" src="/pictures/cart-shopping-solid.svg" alt="Ikona koszyka">
+                </div>
+            </div>
+            <div class="kategorie col-2">
+                <div class="kategorieOne col-kat-1"></div>
+                <div class="kategorieTwo col-kat-2">
+                    
+                    <a href="itemList.html">
+                        <div>Gry planszowe</div>
+                    </a>
+
+                </div>
+                <div class="kategorieThree col-kat-3">
+
+                    <a href="itemList.html">
+                        <div>Karcianki kolekcjonerskie</div>
+                    </a>
+
+                </div>
+                <div class="kategorieFour col-kat-4">
+                        
+                    <a href="itemList.html">
+                        <div>Podręczniki RPG</div>
+                    </a>
+
+                </div>
+                <div class="kategorieFive col-kat-5">
+                    
+                    <a href="itemList.html">
+                        <div>Gry figurkowe i bitewne</div>
+                    </a>
+
+                </div>
+                <div class="kategorieSix col-kat-6">
+                    
+                    <a href="itemList.html">
+                        <div>Figurki kolekcjonerskie</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieSeven col-kat-7">
+
+                    <a href="itemList.html">
+                        <div>Komiksy oraz książki</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieEight col-kat-8">
+
+                    <a href="rejestracja.html">
+                        <div>Akcesoria planszówkowe</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieNine col-kat-9">
+                    
+                    <a href="noweProdukty.html">
+                        <div>Promocje</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieTen col-kat-10"></div>
+            </div> 
+        </header>
+
+        <main>
+
+
+        <div class="addingForm">
+                <h2>Formularz Dodawania</h2>
+
+            <form action="przetwarzanie_formularza.php" method="post" enctype="multipart/form-data">
+                <!-- Pole nazwa -->
+                <label for="nazwa">Nazwa:</label>
+                <input type="text" id="nazwa" name="nazwa" placeholder="Podaj nazwę" required>
+                <br>
+
+                <!-- Pole checkbox kategorie -->
+                <div class="form-group">
+                    <label>Kategorie:</label>
+                    <div>
+                    <label for="gryPlanszowe">Gry planszowe</label>    
+                    <input type="checkbox" id="gryPlanszowe" name="kategorie[]" value="gryPlanszowe">
+                    </div>
+                    <div>
+                    <label for="karciankiKolekcjonerskie">Karcianki kolekcjonerskie</label>
+                    <input type="checkbox" id="karciankiKolekcjonerskie" name="kategorie[]" value="karciankiKolekcjonerskie">
+                    </div>
+                    <div>
+                    <label for="podrecznikiRPG">Podręczniki RPG</label>
+                    <input type="checkbox" id="podrecznikiRPG" name="kategorie[]" value="podrecznikiRPG">
+                    </div>
+                    <div>
+                    <label for="gryFigurkowe">Gry figurkowe i bitewne</label>
+                    <input type="checkbox" id="gryFigurkowe" name="kategorie[]" value="gryFigurkowe">
+                    </div>
+                    <div>
+                    <label for="figurkiKolekcjonerskie">Figurki kolekcjonerskie</label>
+                    <input type="checkbox" id="figurkiKolekcjonerskie" name="kategorie[]" value="figurkiKolekcjonerskie">
+                    </div>
+                    <div>
+                    <label for="komiksyKsiazki">Komiksy oraz książki</label>
+                    <input type="checkbox" id="komiksyKsiazki" name="kategorie[]" value="komiksyKsiazki">
+                    </div>
+                    <div>
+                    <label for="akcesoriaPlanszowkowe">Akcesoria planszówkowe</label>
+                    <input type="checkbox" id="akcesoriaPlanszowkowe" name="kategorie[]" value="akcesoriaPlanszowkowe">
+                    </div>
+                </div>
+                <br>
+
+                <!-- Pole autor -->
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" name="autor" placeholder="Podaj autora" required>
+                <br>
+
+                <!-- Radio button pegi -->
+                <div class="form-group">
+
+                    <div class="radio">
+                        <label>Pegi:</label>
+                        <div>
+                        <label for="pegi7">PEGI 7</label>
+                        <input type="radio" id="pegi7" name="pegi" value="pegi7" required>
+                        </div>
+                        <div>
+                        <label for="pegi12">PEGI 12</label>
+                        <input type="radio" id="pegi12" name="pegi" value="pegi12" required>
+                        </div>
+                        <div>
+                        <label for="pegi16">PEGI 16</label>
+                        <input type="radio" id="pegi16" name="pegi" value="pegi16" required>
+                        </div>
+                        <div>
+                        <label for="pegi18">PEGI 18</label>
+                        <input type="radio" id="pegi18" name="pegi" value="pegi18" required>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Lista rozwijana ilości -->
+                <label for="ilosc">Ilość sztuk:</label>
+                <select id="ilosc" name="ilosc" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br>
+
+                <!-- Pole do wrzucenia pliku -->
+                <label for="plik">Wgraj plik:</label>
+                <input type="file" id="plik" name="plik" accept=".pdf, .doc, .docx" required>
+                <br>
+
+                <!-- Przycisk do wysłania formularza -->
+                <input type="submit" id="submitButton" value="Wyślij">
+            </form>
+        </div>
+
+        <div class="showResults">
+
+        </div>
+
+        </main>
+
+
+</body>
+    
+</html>

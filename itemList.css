@@ -1,0 +1,753 @@
+/*Ogólne ustawienia kontenerów*/
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: rgb(235, 237, 239);
+    margin: 0px;
+}
+
+
+[class*="bar-top"]{
+    background-color: rgba(133, 15, 15, 0.962)
+}
+
+[class*="bar-top"]{
+    display:flex;
+    flex-direction: row;
+}
+
+[class*="ol-kat-"]{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center; 
+    border-right: 2px solid rgb(111, 109, 109);
+}
+
+
+
+
+/*Ikonki*/
+
+.col-top-1, .col-top-3, .col-top-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.col-top-1{
+    margin-top: 1px;
+}
+
+.col-top-1 > img{
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    min-height: 40px;
+    min-width: 30px;
+}
+
+.col-top-3 > a > img, .col-top-4 > img {
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    min-height: 40px;
+    min-width: 30px;
+}
+
+.col-top-3:hover, .col-top-4:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+    filter: brightness(0) invert(1) grayscale(100%);
+}
+
+.glass{
+    min-height: 6px;
+    max-height: 30px;
+}
+
+/*wyszukiwarka*/
+
+.wyszukiwarka_col-top-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin:0;
+}
+
+.searchBar{
+    background-color: white;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 15px;
+    margin-left: 15%;
+}
+
+.searchIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+    padding: 0;
+    margin:0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.searchText{
+
+    height: 100%;
+    width: 90%;
+    padding: 0;
+    margin:0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.search{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: large;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/*Pasek kategorii*/
+
+[class*="kategorie col-2"]{
+    background-color: rgb(85, 77, 77);
+    color:rgb(236, 226, 226);
+    font-size: calc(4px + 0.9vw);
+}
+
+
+
+
+/*Responsywnosc*/
+
+
+.col-1,.col-2, .col-3, .col-4 {
+    width: 100%;
+    margin: 0px;
+}
+
+/*pasek nawigacyjny*/
+.col-1{
+    height: 10vh;
+    min-height: 75px;
+}
+
+.col-3{
+    height: 60vh;
+    min-height: 1000px;
+}
+
+.col-4{
+    height: 30vh;
+    min-height: 500px;
+}
+
+.col-5{
+    margin: 10px;
+    height: 10vh;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding: 10px;
+}
+
+/*Przycisk pokazywanie/ukrywania dodatkowych wierszy*/
+
+#FadeButton{
+    height: 80%;
+    width: 20%;
+    border-radius: 30px;
+    background-color: rgb(85, 77, 77);
+    font-family: Candara Bold;
+    color: white;
+    min-height: 100px;
+    max-height: 180px;
+    max-width: 300px;
+    min-width: 100px;
+    font-size: calc(12px + 0.6h); 
+}
+
+#FadeButton:active{
+    color: #ffffff;
+    background-color: rgb(136, 124, 124);
+    transform: scale(1.10);
+    transition: 0.3s;
+    transform: translateY(10px);
+}
+
+/*top bar*/
+.col-top-1{
+    width: 20%;
+}
+
+.col-top-2{
+    width: 40%;
+}
+
+.col-top-3{
+    width: 20%;
+}
+
+.col-top-4{
+    width: 20%;
+}
+
+[class*="col-t"] {
+    padding: 15px;
+    height: 100%;
+}
+
+
+/*main*/
+
+
+[class*="col-"] a{
+    color: black;
+    text-decoration: none;
+}
+
+[class*="col-"] a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/* For mobile phones: */
+
+
+   
+    /*header*/
+
+    /*Top bar*/
+
+    .searchBar{
+        display:none;
+    }
+
+    /*Kategorie*/
+    [class*="kategorie col-2"] {
+        display: none;
+    }
+
+    /*kategorie*/
+    .col-2{
+        height: 10vh;
+        min-height: 60px;
+    }
+
+
+    /*Main*/
+
+    a{
+        font-weight: 600;
+        font-family: Candara Bold;
+    }
+    
+    [class*="col-3"]{
+        margin-top: 20px;
+        height: 60vh;
+        min-height: 2000px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-family: Candara Light;
+    }
+
+    [class*="col-4"]{
+        min-height: 1000px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;    
+        display:none;
+        flex-wrap: wrap;
+        font-family: Candara Light;
+    }
+
+    .rowsHidden{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;    
+        display:none;
+        flex-wrap: wrap;
+    }
+    
+    /*Ustawienia kontenerów na dwie główne osie rzędów: rowTop i rowBot*/
+
+    [class*="col-3"] > div{
+        height: 100%;
+        width: 50%;
+        min-height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    [class*="col-4"] > div{
+        height: 100%;
+        width: 50%;
+        min-height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*Ustawienia wewnętrznych rzędów: rowOne, rowTwo, rowThree, rowFour*/
+
+    [class*="col-3"] > div > div{
+        height: 50%;
+        width: 100%;
+        min-height: 1000px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [class*="col-4"] > div > div{
+        height: 50%;
+        width: 100%;
+        min-height: 1000px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Ustawienia wewnętrznych elementów rzędów: rowOne, rowTwo, rowThree, rowFour, czyli iFristOne - iFirstFour, iSencondOne - iSecondFour itd.*/
+
+    [class*="col-3"] > div > div > div{
+        height: 25%;
+        width: 100%;
+        min-height: 250px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    [class*="col-4"] > div > div > div{
+        height: 25%;
+        width: 100%;
+        min-height: 250px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    [class*="row-img"]  img{
+        width: 100%;
+        height: 100%;
+        max-height: 150px;
+        overflow: hidden;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    [class*="row-img"]:hover{
+        border-radius: 10px;
+        transform: scale(1.05);
+        transition: 0.3s;
+        background-color: rgb(201, 202, 204);
+    }
+
+
+/* For tablets: */
+
+@media only screen and (min-width: 600px) {
+    
+    /*header*/
+
+    /*Top bar*/
+    .searchBar{
+        display:flex;
+    }
+
+    /*Kategorie*/
+    [class*="kategorie col-2"] {
+        display: none;
+    }
+
+    /*Bannery*/
+    
+    [class*="main-banner col-3"]{
+        overflow: hidden;
+    }
+
+    [class*="dividing-banner-top col-6"]{
+        overflow: hidden;
+    }
+
+    [class*="dividing-banner-mid col-8"]{
+        overflow: hidden;
+    }
+
+    [class*="dividing-banner-bot col-10"]{
+        overflow: hidden;
+    }
+
+    /*Kategorie*/
+
+    /*top bar*/
+    .col-top-1{
+        width: 20%;
+    }
+
+    .col-top-2{
+        width: 60%;
+    }
+
+    .col-top-3{
+        width: 10%;
+    }
+
+    .col-top-4{
+        width: 10%;
+    }
+
+
+    /*Main*/
+    
+    #FadeButton{
+        font-size: calc(12px + 0.8vh); 
+    }
+
+    [class*="col-3"]{
+        margin-top: 20px;
+        height: 60vh;
+        min-height: 1000px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .col-4{
+        min-height: 500px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+    }
+
+    /*Ustawienia kontenerów na dwie główne osie rzędów: rowTop i rowBot*/
+
+    [class*="col-3"] > div{
+        height: 50%;
+        width: 100%;
+        min-height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [class*="col-4"] > div{
+        height: 50%;
+        width: 100%;
+        min-height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /*Ustawienia wewnętrznych rzędów: rowOne, rowTwo, rowThree, rowFour*/
+
+    [class*="col-3"] > div > div{
+        height: 50%;
+        width: 100%;
+        min-height: 250px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [class*="col-4"] > div > div{
+        height: 50%;
+        width: 100%;
+        min-height: 250px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Ustawienia wewnętrznych elementów rzędów: rowOne, rowTwo, rowThree, rowFour, czyli iFristOne - iFirstFour, iSencondOne - iSecondFour itd.*/
+
+    [class*="col-3"] > div > div > div{
+        height: 100%;
+        width: 25%;
+        min-height: 250px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    [class*="col-4"] > div > div > div{
+        height: 100%;
+        width: 25%;
+        min-height: 250px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    
+    [class*="row-img"]  img{
+        width: 100%;
+        height: 100%;
+        max-height: 150px;
+        overflow: hidden;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    [class*="row-img"]:hover{
+        border-radius: 10px;
+        transform: scale(1.05);
+        transition: 0.3s;
+        background-color: rgb(201, 202, 204);
+    }
+}
+
+/*For Desktop:*/
+
+@media only screen and (min-width: 768px) {
+    
+    /*header*/
+
+    /*Top bar*/
+    .searchBar{
+        display:flex;
+    }
+
+    .col-top-1{
+        width: 10%;
+    }
+
+    .col-top-2{
+        width: 60%;
+    }
+
+    .col-top-3{
+        width: 10%;
+    }
+
+    .col-top-4{
+        width: 10%;
+    }
+
+    .col-top-5{
+        width: 10%;
+    }
+
+    /*Kategorie*/
+
+    [class*="kategorie col-2"]{
+        display:flex;
+        flex-direction: row;
+    }
+
+    [class*="col-k"] {
+        display: grid;
+        padding: 15px;
+        height: 100%;
+        width: 10%;
+    }
+
+    [class*="col-k"] a > div {
+        color: white;
+    }
+
+    /*Main*/
+
+    [class*="col-3"]{
+        margin-top: 20px;
+        height: 60vh;
+        min-height: 1000px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .col-4{
+        
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+    }
+
+    /*Ustawienia kontenerów na dwie główne osie rzędów: rowsTop, rowsBot i rowsHidden*/
+
+    [class*="col-3"] > div{
+        height: 50%;
+        width: 100%;
+        min-height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [class*="col-4"] > div{
+        height: 50%;
+        width: 100%;
+        min-height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*Ustawienia wewnętrznych rzędów: rowOne, rowTwo, rowThree, rowFour, rowFifth, rowSixth*/
+
+    [class*="col-3"] > div > div{
+        height: 50%;
+        width: 100%;
+        min-height: 250px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [class*="col-4"] > div > div{
+        height: 50%;
+        width: 100%;
+        min-height: 250px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*Ustawienia wewnętrznych elementów rzędów: rowOne, rowTwo, rowThree, rowFour, czyli iFristOne - iFirstFour, iSencondOne - iSecondFour itd.*/
+
+    [class*="col-3"] > div > div > div{
+        height: 100%;
+        width: 25%;
+        min-height: 250px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    [class*="col-4"] > div > div > div{
+        height: 100%;
+        width: 25%;
+        min-height: 250px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    [class*="row-img"]  img{
+        width: 100%;
+        height: 100%;
+        max-height: 150px;
+        overflow: hidden;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    [class*="row-img"]:hover{
+        border-radius: 10px;
+        transform: scale(1.05);
+        transition: 0.3s;
+        background-color: rgb(201, 202, 204);
+    }
+    
+
+    
+
+    
+
+    
+
+}
+
+

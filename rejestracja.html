@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rejestracja.css">
+    <title>Planszówkarnia Heartfire</title>
+    <link rel="icon" type="image/x-icon" href="/pictures/icons8-campfire-96.png">
+</head>
+<body>
+        <header id="navbar">
+            <div class="bar-top col-1">
+                <div class="logo col-top-1">
+                    <img class="icon-t wood" src="/pictures/icons8-campfire-96.png" alt="Ikona ogniska">
+                </div>
+                <div class="breaker col-top-5"></div>
+                <div class="wyszukiwarka col-top-2">
+                    <div class="searchBar">
+                        <div class="searchIcon">
+                            <img class="icon-t glass" src="/pictures/magnifying-glass-solid.svg" alt="Ikona lupy">
+                        </div>
+                        <div class="searchText">
+                            <input type="text" placeholder="Szukaj..." class="search">
+                        </div>
+                    </div>
+                </div>
+                <div class="konto col-top-3">
+                    <a href="login.html">
+                    <img class="icon-t iconUser" src="/pictures/user-solid.svg" alt="Ikona użytkownika" >
+                    </a>
+                </div>
+                <div class="koszyk col-top-4"> 
+                    <img class="icon-t iconCart" src="/pictures/cart-shopping-solid.svg" alt="Ikona koszyka">
+                </div>
+            </div>
+            <div class="kategorie col-2">
+                <div class="kategorieOne col-kat-1"></div>
+                <div class="kategorieTwo col-kat-2">
+                    
+                    <a href="itemList.html">
+                        <div>Gry planszowe</div>
+                    </a>
+
+                </div>
+                <div class="kategorieThree col-kat-3">
+
+                    <a href="itemList.html">
+                        <div>Karcianki kolekcjonerskie</div>
+                    </a>
+
+                </div>
+                <div class="kategorieFour col-kat-4">
+                        
+                    <a href="itemList.html">
+                        <div>Podręczniki RPG</div>
+                    </a>
+
+                </div>
+                <div class="kategorieFive col-kat-5">
+                    
+                    <a href="itemList.html">
+                        <div>Gry figurkowe i bitewne</div>
+                    </a>
+
+                </div>
+                <div class="kategorieSix col-kat-6">
+                    
+                    <a href="itemList.html">
+                        <div>Figurki kolekcjonerskie</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieSeven col-kat-7">
+
+                    <a href="itemList.html">
+                        <div>Komiksy oraz książki</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieEight col-kat-8">
+
+                    <a href="rejestracja.html">
+                        <div>Akcesoria planszówkowe</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieNine col-kat-9">
+                    
+                    <a href="noweProdukty.html">
+                        <div>Promocje</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieTen col-kat-10"></div>
+            </div> 
+        </header>
+
+        <main>
+
+            <h2>Formularz Rejestracji</h2>
+
+            <form action="przetwarzanie_formularza.php" method="post">
+            <!-- Pole email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Podaj swój adres email" required>
+            <br>
+
+            <!-- Pole hasło -->
+            <label for="haslo">Hasło:</label>
+            <input type="password" id="haslo" name="haslo" placeholder="Wprowadź hasło" required>
+            <br>
+
+            <!-- Powtórzenie hasła -->
+            <label for="hasloPowtorz">Powtórz hasło:</label>
+            <input type="password" id="hasloPowtorz" name="hasloPowtorz" placeholder="Powtórz hasło" required>
+            <br>
+
+            <!-- Pole imię -->
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" placeholder="Podaj swoje imię" required>
+            <br>
+
+            <!-- Pole nazwisko -->
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko" placeholder="Podaj swoje nazwisko" required>
+            <br>
+
+            <!-- Suwak z datą urodzenia -->
+            <label for="dataUrodzenia">Data urodzenia:</label>
+            <input type="date" id="dataUrodzenia" name="dataUrodzenia" required>
+            <br>
+
+            <!-- Przycisk do wysłania formularza -->
+            <input type="submit" value="Zarejestruj się">
+            </form>
+
+
+        </main>
+
+
+</body>
+
+</html>

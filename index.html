@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Planszówkarnia Heartfire</title>
+    <link rel="icon" type="image/x-icon" href="/pictures/icons8-campfire-96.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="stickyMenu.js"></script>
+    <script src="topButton.js"></script>
+    <script src="ajaxLoading.js"></script>
+    <script src="earlyLoadImg.js"></script>
+</head>
+<body>
+        <header id="navbar">
+            <div class="bar-top col-1">
+                <div class="logo col-top-1">
+                    <img class="icon-t wood" src="/pictures/icons8-campfire-96.png" alt="Ikona ogniska">
+                </div>
+                <div class="breaker col-top-5"></div>
+                <div class="wyszukiwarka col-top-2">
+                    <div class="searchBar">
+                        <div class="searchIcon">
+                            <img class="icon-t glass" src="/pictures/magnifying-glass-solid.svg" alt="Ikona lupy">
+                        </div>
+                        <div class="searchText">
+                            <input type="text" placeholder="Szukaj..." class="search">
+                        </div>
+                    </div>
+                </div>
+                <div class="konto col-top-3">
+                    <a href="login.html">
+                    <img class="icon-t iconUser" src="/pictures/user-solid.svg" alt="Ikona użytkownika" >
+                    </a>
+                </div>
+                <div class="koszyk col-top-4"> 
+                    <img class="icon-t iconCart" src="/pictures/cart-shopping-solid.svg" alt="Ikona koszyka">
+                </div>
+            </div>
+            <div class="kategorie col-2">
+                <div class="kategorieOne col-kat-1"></div>
+                <div class="kategorieTwo col-kat-2">
+                    
+                    <a href="itemList.html">
+                        <div>Gry planszowe</div>
+                    </a>
+
+                </div>
+                <div class="kategorieThree col-kat-3">
+
+                    <a href="itemList.html">
+                        <div>Karcianki kolekcjonerskie</div>
+                    </a>
+
+                </div>
+                <div class="kategorieFour col-kat-4">
+                        
+                    <a href="itemList.html">
+                        <div>Podręczniki RPG</div>
+                    </a>
+
+                </div>
+                <div class="kategorieFive col-kat-5">
+                    
+                    <a href="itemList.html">
+                        <div>Gry figurkowe i bitewne</div>
+                    </a>
+
+                </div>
+                <div class="kategorieSix col-kat-6">
+                    
+                    <a href="itemList.html">
+                        <div>Figurki kolekcjonerskie</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieSeven col-kat-7">
+
+                    <a href="itemList.html">
+                        <div>Komiksy oraz książki</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieEight col-kat-8">
+
+                    <a href="rejestracja.html">
+                        <div>Akcesoria planszówkowe</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieNine col-kat-9">
+                    
+                    <a href="noweProdukty.html">
+                        <div>Promocje</div>
+                    </a>
+                        
+                   
+                </div>
+                <div class="kategorieTen col-kat-10"></div>
+            </div> 
+        </header>
+           
+        <main>
+            <div class="main-banner col-3">
+                <img src="/pictures/banner1.jpg" alt="Banner Gaming space">
+            </div>  
+            <div class="artykuly col-4">
+                <div class="artykulyOne col-art">
+                    <img src="/pictures/dnd_article.jpg" alt="Artykuł 1" >
+                    <a href="artykul.html">
+                        <div class="elementTitle Art">Czym jest D&D?</div>
+                    </a>
+                    <div class="desc Art">Zanurz się w świat Fantasy!</div>
+                </div>
+                <div class="artykulyTwo col-art">
+                    <img src="/pictures/warhammerArticle.jpg" alt="Artykuł 2" >
+                    <a href="/">
+                        <div class="elementTitle Art">Nowości w Warhammerze!</div>
+                    </a>
+                    <div class="desc Art">Co nowego na nas czeka?</div>
+                </div>
+                <div class="artykulyThree col-art">
+                    <img src="/pictures/gothArti.jpeg" alt="Artykuł 3" >
+                    <a href="/">
+                        <div class="elementTitle Art">Gotyckie piękno</div>
+                    </a>    
+                    <div class="desc Art">Ciemne dusze, Dracula i nie tylko</div>
+                </div>
+            </div>  
+
+            <div class="col-14">
+                <h1>Nowości w ofercie</h1>
+            </div>
+
+            <div class="nowosci col-5">
+                <div class="nOne">
+                    <div class="newOne col-new">
+                        <img src="/pictures/witcherOW.png" alt="Nowość 1" >
+                        <a href="item.html">
+                            <div class="elementTitle Art">Wiedźmin Stary świat</div>
+                        </a> 
+                        <div class="desc Art">250 zł</div>
+                    </div>
+                    <div class="newTwo col-new">
+                        <img src="/pictures/BoMT.webp" alt="Nowość 2" >
+                        <a href="/">
+                            <div class="elementTitle Art">The Book of Many Things</div>
+                        </a> 
+                        <div class="desc Art">200 zł</div>
+                    </div>
+                </div>
+                <div class="nTwo">
+                    <div class="newThree col-new">
+                        <img src="/pictures/Everdell.jpg" alt="Nowość 3" >
+                        <a href="/">
+                            <div class="elementTitle Art">Everdell</div>
+                        </a> 
+                        <div class="desc Art">150 zł</div>
+                    </div>
+                    <div class="newFour col-new">
+                        <img src="/pictures/cadianShockTroopsBox.png" alt="Nowość 4" >
+                        <a href="/">
+                            <div class="elementTitle Art">Cadian Shock Troops Box</div>
+                        </a> 
+                        <div class="desc Art">130 zł</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dividing-banner-top col-6">
+                <img src="/pictures/banner2.jpg" alt="Banner Escape room">
+            </div> 
+
+
+            <div class="col-15">
+                <h1>Oczekiwane premiery</h1>
+            </div>
+
+
+            <div class="premiery col-7">
+                <div class="premieryOne col-prem">
+                    <img src="/pictures/descentLegendyMroku.png" alt="Premiera 1" >
+
+                    <div>
+                        <a href="/">
+                            <div class="elementTitle Art">Descent: Legendy Mroku</div>
+                        </a> 
+                        <div class="desc Art">700 zł</div>
+                    </div>
+                    
+                </div>
+                <div class="premieryTwo col-prem">
+                    <img src="/pictures/wojnaOPierscienKrolowieSrodziemia.png" alt="Premiera 2" >
+                    <div>
+                        <a href="/">
+                            <div class="elementTitle Art">Wojna o Pierścień: Królowie Śródziemia</div>
+                        </a> 
+                        <div class="desc Art">450 zł</div>
+                    </div>
+                </div>
+                <div class="premieryThree col-prem">
+                    <img src="/pictures/KieszonkowePodziemia.png" alt="Premiera 3" >
+                    <div>
+                        <a href="/">
+                            <div class="elementTitle Art">Kieszonkowe podziemia</div>
+                        </a> 
+                        <div class="desc Art">60 zł</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dividing-banner-mid col-8">
+                <img src="/pictures/banner3.jpg" alt="Banner shopping centre">
+            </div> 
+
+
+            <div class="col-16">
+                <h1>Bestsellery</h1>
+            </div>
+
+
+            <div class="bestsellery col-9">
+                <div class="bOne">
+                    <div class="bestOne col-best">
+                        <img src="/pictures/talisman.png" alt="Bestseller 1" >
+                        <a href="/">
+                            <div class="elementTitle Art">Talisman: Magia i Miecz</div>
+                        </a> 
+                        <div class="desc Art">180 zł</div>
+                    </div>
+                    <div class="bestTwo col-best">
+                        <img src="/pictures/Catan.png" alt="Bestseller 2" >
+                        <a href="/">
+                            <div class="elementTitle Art">Catan: Gra planszowa</div>
+                        </a> 
+                        <div class="desc Art">140 zł</div>
+                    </div>
+                </div>
+                <div class="bTwo">
+                    <div class="bestThree col-best">
+                        <img src="/pictures/Splendor.png" alt="Bestseller 3" >
+                        <a href="/">
+                            <div class="elementTitle Art">Splendor</div>
+                        </a> 
+                        <div class="desc Art">100 zł</div>
+                    </div>
+                    <div class="bestFour col-best">
+                        <img src="/pictures/Carcassonne.png" alt="Bestseller 4" >
+                        <a href="/">
+                            <div class="elementTitle Art">Carcassonne</div>
+                        </a> 
+                        <div class="desc Art">80 zł</div>
+                    </div>
+                </div>
+                    <div class="bThree">
+                        <div class="bestFive col-best">
+                            <img src="/pictures/SmallWorld.png" alt="Bestseller 5" >
+                            <a href="/">
+                                <div class="elementTitle Art">Small World</div>
+                            </a> 
+                            <div class="desc Art">200 zł</div>
+                        </div>
+                        <div class="bestSix col-best">
+                            <img src="/pictures/DnDPHB.png" alt="Bestseller 6" >
+                            <a href="/">
+                                <div class="elementTitle Art">D&D PHB</div>
+                            </a> 
+                            <div class="desc Art">230 zł</div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="dividing-banner-bot col-10">
+                <img id="myImage" src="/pictures/banner4.jpg" alt="Banner Gaming space">
+            </div> 
+
+
+
+            <div class="description col-12">
+
+                <button id="loadDataBtn">Sprawdź terminy spotkań</button>
+
+                <table id="dataTable"></table>
+
+            </div>
+        
+
+            <button onclick="topFunction()" id="topScrollButton" title="Go to top">Top</button>
+            
+        </main>
+         
+
+        <footer class="footer col-13">
+            <div class="top col-foot">
+                <div class="newsletterTop">
+                    <div class="newsletterTitle">Nie przegap specjalnych promocji!</div>
+                    <div class="newsletterDesc">Zapisz się do newslettera i bądź zawsze na bieżąco</div>
+                </div>
+
+                <div class="newsletterBot">
+                    <input type="text" placeholder="Twój adres e-mail" class="newsletterBotEmail">
+                    <div class="newsletterBotInputButton">
+                        <input type="text" placeholder="Twoje imię" class="newsletterBotNameInput">
+                        <button class="newsletterBotButton">Zapisz się!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom col-foot">
+                <div class="contactTop">
+                    <div class="newsletterTopDesc">Zadzwoń do nas:</div>
+                    <div class="phoneNumber">321-123-456</div>
+                </div>
+                <div class="contactBot">
+                    <div class="newsletterBotDesc">Napisz do nas:</div>
+                    <div class="ourEmail">sklepheartfire@gmail.com</div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
+
